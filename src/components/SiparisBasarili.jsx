@@ -24,7 +24,7 @@ const SiparisBasarili = () => {
           </h2>
 
           
-          <h2 className="md:hidden text-[72px] font-medium leading-tight mt-60 tracking-wider uppercase">
+          <h2 className="md:hidden text-[52px] px-8 font-medium leading-tight mt-60 tracking-wider uppercase">
             TEBRİKLER! <br /> SİPARİŞİNİZ ALINDI!
           </h2>
         </div>
@@ -70,6 +70,8 @@ const SiparisBasarili = () => {
               <li>Terminal Pizza</li>
               <li>5 Kişilik Hackathlon Pizza</li>
               <li>useEffect Tavuklu Pizza</li>
+              <li>Beyaz Console Frosty</li>
+              <li>Testler Geçti Mutlu Burger</li>
             </ul>
           </div>
           <div className="normal-case tracking-normal">

@@ -47,10 +47,10 @@ const GirisSayfasi = () => {
                 </div>
 
                 {/* --- MOBİL PİZZA BANNER --- */}
-                <div className="md:hidden w-full mt-auto relative overflow-hidden" style={{ height: '200px' }}>
+                <div className="md:hidden w-full mt-auto relative mb-[0px]" >
                     <img 
                         src="images/iteration-2-images/pictures/form-banner.png" 
-                        className="w-full h-full object-cover object-bottom block" 
+                        className="w-full h-auto object-contain block" 
                         alt="Pizza"
                         style={{ transform: 'rotate(180deg) scale(1.1)' }} 
                     />
@@ -59,17 +59,23 @@ const GirisSayfasi = () => {
 
                 {/* --- CATEGORY BAR --- */}
                 
-                <nav className="relative md:absolute md:bottom-0 left-0 w-full bg-white shadow-sm z-20 h-[268px] md:h-[94px] flex items-center justify-center">
-                    <div className="max-w-[1072px] w-full px-6 md:px-10">
+                <nav className="relative w-full bg-white shadow-sm z-20 py-4 md:absolute md:bottom-0 md:h-[94px] flex items-center justify-center">
+                   
+                    <div className="w-full max-w-[1072px] mx-auto px-4 md:px-12">
                         
-                        <div className="grid grid-cols-2 gap-y-10 gap-x-20 md:flex md:justify-between md:items-center mx-auto w-fit md:w-full">
+                       
+                        <div className="grid grid-cols-2 gap-y-4 md:flex md:flex-row md:justify-between items-center w-full md:gap-x-8">
+                            
                             {categories.map((cat) => (
                                 <div 
                                     key={cat.id} 
-                                    className="flex items-center gap-4 cursor-pointer hover:text-[#CE2829] transition-colors font-semibold text-[#292929] justify-start"
+                                    className="flex items-center gap-3 cursor-pointer hover:text-[#CE2829] font-semibold text-[#292929] 
+                                            w-[140px] md:w-auto justify-start md:justify-center mx-auto md:mx-0"
                                 >
-                                    <img src={cat.icon} alt={cat.name} className="w-8 h-8 md:w-8 md:h-8 object-contain" />
-                                    <span className="text-[15px] md:text-base whitespace-nowrap">{cat.name}</span>
+                                    <img src={cat.icon} alt={cat.name} className="w-6 h-6 md:w-8 md:h-8 object-contain shrink-0" />
+                                    <span className="text-[13px] md:text-base uppercase tracking-tight whitespace-nowrap">
+                                        {cat.name}
+                                    </span>
                                 </div>
                             ))}
                         </div>
@@ -80,7 +86,7 @@ const GirisSayfasi = () => {
             
            
             {/* --- PROMOTIONS (CARDS) --- */}
-            <main className="bg-[#FAF7F2] py-20 px-12">
+            <main className="bg-[#FAF7F2] py-20 px-10">
                 <div className="max-w-[1072px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Card 1 (Large) */}
                     <div className="bg-[#CE2829] rounded-xl p-8 bg-[url('images/iteration-2-images/cta/kart-1.png')] bg-cover bg-center min-h-[400px] text-white flex flex-col justify-start items-start">

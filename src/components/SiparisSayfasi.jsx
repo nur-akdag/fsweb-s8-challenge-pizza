@@ -195,7 +195,8 @@ const SiparisSayfasi = () => {
                         <img src="images/iteration-2-images/footer/logo-footer.svg" alt="Footer Logo" className="w-48" />
                         <ul className="space-y-4 opacity-80 text-left"><li>📍 341 Londonderry Road, Istanbul</li><li>✉️ aciktim@teknolojikyemekler.com</li><li>📞 +90 216 123 45 67</li></ul>
                     </div>
-                    <div><h4 className="text-xl font-bold mb-8 uppercase text-left">Sıcak Menü</h4><ul className="space-y-3 opacity-60 text-left"><li>Terminal Pizza</li><li>5 Kişilik Hackathlon Pizza</li><li>useEffect Tavuklu Pizza</li></ul></div>
+                    <div><h4 className="text-xl font-bold mb-8 uppercase text-left">Sıcak Menü</h4><ul className="space-y-3 opacity-60 text-left"><li>Terminal Pizza</li><li>5 Kişilik Hackathlon Pizza</li><li>useEffect Tavuklu Pizza</li><li>Beyaz Console Frosty</li>
+              <li>Testler Geçti Mutlu Burger</li></ul></div>
                     <div><h4 className="text-xl font-bold mb-8 uppercase text-left">Instagram</h4><div className="grid grid-cols-3 gap-2 w-fit">{[0, 1, 2, 3, 4, 5].map(i => <img key={i} src={`images/iteration-2-images/footer/insta/li-${i}.png`} className="w-[105px] h-[105px] object-cover rounded-md" alt="insta" />)}</div></div>
                 </div>
             </footer>
